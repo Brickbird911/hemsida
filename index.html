@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-  
-</head>
-<frameset rows="40, *">
-    <frame src="top.html" name="top" />
-<frameset cols="20%, 80%" />
-    <frame src="meny.html" name="meny" />
-    <frame src="mitten.html" name="mitten" />
-</frameset>                                
+	<head>
+		<title>Dina fina skol länkar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		</head>
+
+	<body>
+
+		<h1>Velkommen</h1>
+		<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Crabfish.tk länk</a>
+		<h1>share this website to your friends</h1>
+		<h1>hej</h1>
+		<a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank"> bra länk</a>
+		<br/>
+		               <a href="https://drive.google.com/drive/my-drive" target="_blank"> drive</a>
+		<br/>
+		          <a href="https://eds.kedschools.se/Notification/StudentIndex" target="_blank">EDS</a>
+		<br/>
+		<a style="cursor: pointer" onclick="alert('Why, i said not to press me but you did')">DONT PRESS ME!</a>
+
+		<br/>
+		            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank">Maila vänner här</a>
+		<br/>
+		<a href="https://web.skola24.se/timetable/timetable-viewer/kunskapsskolan.skola24.se/Kunskapsskolan%20%C3%96rebro/" target="_blank">schema visare</a>
+		<script>
+			alert("Välkommen");
+			</script>
+    <style>
+		
+:root {
+    --bg-color: #cfd8dc;
+    --text-color: #212121;
+}
+
+[data-theme="dark"] {
+    --bg-color: #263238;
+    --text-color: #e0e0e0;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color); 
+  font-family: "Playfair Display";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.toggle-button {
+  -webkit-appearance: none;
+  outline: none;
+  width: 200px;
+  height: 100px;
+  background-color: #212121;
+  border-radius: 50px;
+  position: relative;
+  transition: .4s;
+}
+
+.toggle-button:before{
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  top: 0;
+  bottom: 0;
+  background-color: #bdbdbd;
+  transition: .4s;
+}
+
+.toggle-button:checked {
+  background-color: #bdbdbd;
+}
+
+.toggle-button:checked:before {
+  transform: translate(100%);
+  background-color: #212121;
+  transition: .4s;
+}
+    </style>
+
+<script>
+const toggleSwitch = document.querySelector('.toggle-button');
+
+function switchTheme(e) {
+  if(e.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+
+<nav>
+  <h1>Light Theme/Dark Theme Selector</h1>
+</nav>
+<div class="container">
+  <h2 style="margin-right:20px">Light</h2>
+  <input type="checkbox" class="toggle-button">
+  <h2 style="margin-left:20px;">Dark</h2>
+</div>
+			
+
+			
+	</body>
+</html>
