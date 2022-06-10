@@ -31,5 +31,9 @@ body {
 	height: 100vh;
 	padding: 25px;
 	border-radius: 25px;
-	background-color: #000000;
+	background-color: #ffffff;
+}
+
+.content h1 {
+   color:#ffffff
 }
