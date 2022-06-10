@@ -1,27 +1,27 @@
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border-radius: 25px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border-radius: 25px;
 }
 
 li {
-  float: left;
+	float: left;
 }
 
 li a {
-  display: block;
-  padding: 8px;
-  background-color: #000000;
-  color:white;
+	display: block;
+	padding: 8px;
+	background-color: #000000;
+	color: white;
 }
 
 body {
-  background-color:grey;
+	background-color: grey;
 }
 
 .active {
-  background-color: #00ff00;
-  color:black;
+	background-color: #00ff00;
+	color: black;
 }
