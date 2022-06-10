@@ -19,5 +19,38 @@
                 <a href="about.html" class="page-link">About</a>
             </li>
 		</ul>
+        
+(function () {
+    document.getElementById("videos").muted = true;
+    var videosSection = document.getElementById("videos");
+    var videosSectionClone = videosSection.cloneNode();
+    var videos = videosSection.getElementsByTagName("video");
+    var randomVideo = videos.item(Math.floor(Math.random() * videos.length)).cloneNode(true);
+    randomVideo.removeAttribute("controls");
+    randomVideo.setAttribute("preload", "auto",);
+    videosSectionClone.appendChild(randomVideo);
+    videosSection.parentNode.replaceChild(videosSectionClone, videosSection);
+    randomVideo.play();
+
+
+})();
+
+var videosSection = document.getElementById("videos");
+
+function play()
+{ 
+video.muted = false; 
+}
+
+function mute()
+{ 
+video.muted = true; 
+}
+
+
+
+</script>
+
+</div>
 	</body>
 </html>
