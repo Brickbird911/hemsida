@@ -34,6 +34,7 @@ body {
 	background-color: #ffffff;
 }
 
-.content h1 {
-   color:#000000
+div h1 {
+	margin:auto;
+	vertical-align: center;
 }
