@@ -1,4 +1,4 @@
-ul {
+.pagination {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -6,22 +6,30 @@ ul {
 	border-radius: 25px;
 }
 
-li {
+.page {
 	float: left;
 }
 
-li a {
+.page .page-link {
 	display: block;
 	padding: 8px;
 	background-color: #000000;
-	color: white;
+	color: #ffffff;
 }
 
 body {
-	background-color: grey;
+	background-color: #808080;
 }
 
-.active {
+.page-link.active {
 	background-color: #00ff00;
-	color: black;
+	color: #000000;
+}
+
+.content {
+	width: 100%;
+	height: 100vh;
+	padding: 25px;
+	border-radius: 25px;
+	background-color: #000000;
 }
